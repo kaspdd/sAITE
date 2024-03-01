@@ -19,19 +19,20 @@
 /* rem */
 html{
     font-size: 20px;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 /* em */
 body{
     font-size: 16px;
+    /* overflow: hidden; */
 }
 
 /* setando cores */
 :root{
     --color-title: white;
     --color-text: black;
-    --color-base: #333333ce;
+    --color-base: #131313e7;
     --color-primary: rgb(83, 75, 201);
     --color-secundary: rgb(52, 216, 139);
     --color-bg: rgba(0, 0, 0, 0.315);
@@ -81,15 +82,14 @@ section{
 
 /* #region welcome */
 
-#welcome{
+#home{
     background-image: url('../img/superHero.jpg');
-    
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     
 }
-.welcomeContainer {
+.homeContainer {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -99,22 +99,22 @@ section{
     background-color: var(--color-bg);
 }
 
-.welcomeContainer ul li {
+.homeContainer ul li {
     padding-top: 1em;
 }
 
-.welcomeContainer ul li h1{
+.homeContainer ul li h1{
     font-size: var(--text-logo);
     color: var(--color-title);
     letter-spacing: 1px;
     font-weight: 10;
 }
 
-.welcomeContainer ul li p{
+.homeContainer ul li p{
     color: var(--color-title);
 }
 
-.welcomeContainer ul li input{
+.homeContainer ul li input{
 
     padding: 1em 3em;
     background-color: transparent;
@@ -132,5 +132,91 @@ section{
     transition: .9s; 
 }
 
+/* #endregion */
+
+/* #region Application */
+
+#application{
+    
+    
+}
+
+.applicationContainer{
+    padding: 1em;
+    width: 100%;
+    height: auto;
+
+}
+
+.applicationContainer h2{
+    font-size: var(--text-icon);
+    text-align: center;
+    font-weight: 10;
+}
+
+.blocoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    margin-inline: 10em;
+    padding-bottom: 1em;
+}
+
+.bloco{
+    flex-basis: 45%;
+    text-align: center;
+}
+
+/* #endregion */
+
+/* #region card */
+.cardContainer {
+    background-color: var(--color-base);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3em 13em;
+}
+
+.card {
+    flex-basis: 28%;
+    text-align: center;
+    background-color: var(--color-title);
+    padding-bottom: 1em;
+    
+}
+
+.imgCard {
+    width: 18em;
+    height: 10em;
+    object-fit: cover
+ }
+
+.card li h2 {
+    padding-top:1em ;
+    background-color: var(--colorDefault);
+ }
+
+ .card li p {
+    background-color: var(--colorText);
+    color: var(--colorBase);
+    padding: .8em;
+    height: 13vh;
+    border-bottom: 1px solid var(--color-base);
+ }
+
+ .card li input{
+    margin-top: 1em;
+    padding: .2em .7em;
+    border: 1px solid var(--color-text);
+    color: var(--color-title);
+    background-color: var(--color-base);
+    border-radius: 5px;
+    transition: .9s;   
+
+ }
 
 /* #endregion */
