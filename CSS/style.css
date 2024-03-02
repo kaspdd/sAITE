@@ -136,16 +136,11 @@ section{
 
 /* #region Application */
 
-#application{
-    
-    
-}
 
 .applicationContainer{
-    padding: 1em;
     width: 100%;
     height: auto;
-
+    padding: 2rem;
 }
 
 .applicationContainer h2{
@@ -155,17 +150,20 @@ section{
 }
 
 .blocoContainer {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 1.5em;
-    margin-inline: 10em;
-    padding-bottom: 1em;
+    padding: 0em 20em ;
+    padding-bottom: 3em;
+
 }
 
 .bloco{
-    flex-basis: 45%;
+    flex-basis: 50%;
     text-align: center;
+    margin-inline: 2em;
 }
 
 /* #endregion */
@@ -175,40 +173,48 @@ section{
     background-color: var(--color-base);
     width: 100%;
     height: auto;
+    padding: 0em 26em;
+} 
+
+.cardInner {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3em 13em;
-}
-
-.card {
-    flex-basis: 28%;
-    text-align: center;
-    background-color: var(--color-title);
-    padding-bottom: 1em;
+    padding: 3em;
     
 }
 
+.card {
+    flex-basis: 26%;
+    text-align: center;
+    background-color: var(--color-title);
+    padding-bottom: 1em;
+
+}
+
 .imgCard {
-    width: 18em;
+    background-position: center;
+    width: 100%;
     height: 10em;
-    object-fit: cover
+    max-height: 15em;
+    
  }
 
-.card li h2 {
+.cardInner li h2 {
+    height: 2rem;
     padding-top:1em ;
     background-color: var(--colorDefault);
  }
 
- .card li p {
+ .cardInner li p {
     background-color: var(--colorText);
     color: var(--colorBase);
     padding: .8em;
-    height: 13vh;
     border-bottom: 1px solid var(--color-base);
  }
 
- .card li input{
+ .cardInner li input{
     margin-top: 1em;
     padding: .2em .7em;
     border: 1px solid var(--color-text);
@@ -216,7 +222,21 @@ section{
     background-color: var(--color-base);
     border-radius: 5px;
     transition: .9s;   
-
  }
 
+ .cardInner li input:hover{
+    background-color: var(--color-title);
+    color: var(--color-base);
+    transition: .9s;
+
+ }
 /* #endregion */
+
+/* #we region */
+.weContainer {
+
+    
+}
+
+/* endregion */
+
