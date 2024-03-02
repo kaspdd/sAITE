@@ -140,13 +140,14 @@ section{
 .applicationContainer{
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding-top: 1em;
 }
 
 .applicationContainer h2{
     font-size: var(--text-icon);
     text-align: center;
     font-weight: 10;
+    padding-bottom: 1em;
 }
 
 .blocoContainer {
@@ -228,15 +229,97 @@ section{
     background-color: var(--color-title);
     color: var(--color-base);
     transition: .9s;
-
  }
 /* #endregion */
 
 /* #we region */
 .weContainer {
+    width: 100%;
+    height: 22vh;
+}
 
+.weContainer ul {
+    padding: 1em 0;
+}
+
+.weContainer ul li h1 {
+    font-size: var(--text-icon);
+    letter-spacing: 1px;
+    font-weight: 10;
+}
+
+.weContainer ul li p {
+   margin: 0 30em;
+   text-align: justify;   
+}
+/* #endregion */
+
+/* #region contato */
+/* #endregion */
+
+#contato{
+    width: 100%;
+    height: 12em;  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    color: var(--color-title);
+    cursor: pointer;
+}
+
+.contactUs {
+    padding-top: 2em;
+    background-color: var(--color-primary);
     
 }
 
-/* endregion */
+.contactUs h2 {
+    font-size: var(--text-title);
+    font-weight: 10;
+    padding-bottom: 1em;
+}
+
+.contactUs a {
+    color: currentColor;
+}
+
+.contactUs p{
+    margin: 0 12em;
+}
+
+.aboutOur {
+    padding-top: 2em;
+    background-color: var(--color-secundary);
+} 
+
+.aboutOur h2 {
+    font-size: var(--text-title);
+    font-weight: 10;
+    padding-bottom: 1em;
+    
+}
+
+.aboutOur a {
+    color: currentColor;
+}
+
+.aboutOur p {
+    margin: 0 12em;
+}
+
+.rodape {
+    width: 100%;
+    height: auto;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-base);
+}
+
+.rodape p{
+    color: var(--color-title);
+}
+
+
+
 
